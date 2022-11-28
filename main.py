@@ -70,6 +70,7 @@ def addData():
     gender = checkGender()
     age = checkAge()
     categoryList = ["sparatutto", "platform", "combattimento", "fantasy", "gestionale"]
+    charList = ["S", "P", "C", "F", "G"]
     print("Choice from the Menù the category:\n")
     for c in categoryList:
         print(f"- [{c[0].capitalize()}] {c.capitalize()}")
@@ -77,8 +78,7 @@ def addData():
     choice = input("Choice digiting the first letter:\n")
     choice = choice.capitalize()
     # Problema di EFFICIENZA
-    while choice.isnumeric() or len(choice) != 1 or choice != "S" and choice != "P" and choice != "C" and choice != "F" \
-            and choice != "G":
+    while choice.isnumeric() or len(choice) != 1 or choice not in chacharList:
         choice = input(f"You entered \'{choice}\', which is not valid, Re-enter it:\n")
         choice = choice.capitalize()
     if len(choice) == 1:
