@@ -51,7 +51,7 @@ def checkAge():
         return
 
 # Predizione del dato
-def machinLearning():
+def machineLearning():
     gender = checkGender()
     if gender == None: return
     age = checkAge()
@@ -120,7 +120,7 @@ def __init__(): #Init funcion
                     print(addData())
                 case 2:
                     print("You chose \'Use the AI\'")
-                    print(machinLearning())
+                    print(machineLearning())
                     __init__()
                 case 3:
                     print("You chose \'Quit\'")
